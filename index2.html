@@ -60,7 +60,60 @@
     margin: 20px 40px;
 }
 
+                                                    /* Media Queries */
+
+@media (min-width:0px)and (max-width:480px){
+
+    .task-card{
+        top: 40%;
+        left: 17%;
+        height: 160px;
+        width: 300px;
+    }
+
+    .task-card > button{ 
+        top: 15px;
+    padding: 8px;
+  
+}
+
+.task-card > input{
     
+    padding: 5px;
+    width: 80%  ;
+    margin: 10px 30px;
+}
+
+
+    }
+
+
+    @media (min-width:481px)and (max-width:768px){
+
+.task-card{
+    top: 40%;
+    left: 25%;
+    height: 170px;
+    width: 330px;
+}
+
+.task-card > button{ 
+    
+padding: 10px;
+top: 10px;
+
+}
+
+.task-card > input{
+
+padding: 8px;
+width: 80%;
+margin: 10px 30px;
+}
+
+
+}
+
 
 
     
@@ -154,7 +207,6 @@
         <hr>
         <input type="text" placeholder="Learn C++"> <br>    
         <button> + Add New Task</button>
-
     </div>
 </body>
 </html>

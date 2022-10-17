@@ -113,6 +113,46 @@
       margin-top: 1rem;
       margin-right:2rem;
     }
+
+    /* Media Queries */
+
+    @media (min-width:0px)and (max-width:480px){
+     
+
+    figure{
+     gap: 60px;
+    }
+
+    .plus-icon{
+      display: inline-block;
+      width: auto;
+
+    }
+    .plus-icon>span {
+      display: none;
+    }
+
+.back-icon > span{
+  display: none;
+}
+.card{
+  height: 30vh;
+  width: 300px;
+}
+    }
+
+    @media (min-width:481px) and (max-width:768px){
+      figure{
+     gap: 100px;
+    }
+
+    .card{
+  height: 30vh;
+  width: 400px;
+}
+
+
+    }
   </style>
 </head>
 
@@ -130,7 +170,7 @@
   <!-- single Card -->
   <section class="container">
     <figure>
-      <a href="index.html"><i class="fa-sharp fa-solid fa-circle-arrow-left"><span>Back</span></i></a>
+      <a href="index.html"><i class="fa-sharp back-icon fa-solid fa-circle-arrow-left"><span>Back</span></i></a>
       <a href="index4.html"><i class="fa-solid plus-icon fa-circle-plus"><span>Add New Task</span></i></a>
     </figure>
 

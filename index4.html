@@ -12,15 +12,17 @@
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
 
-      *{
-        padding: 0;
-        margin: 0;
-        box-sizing: border-box;
-        font-family: 'Poppins', sans-serif;
-      }
-    body{
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
       background-color: rgb(227, 227, 227);
     }
+
     nav {
       height: 80px;
       box-shadow: 0px 3px 30px #7b7b7b29;
@@ -59,12 +61,12 @@
       font-size: 35px;
     }
 
-    figure > i > a{
+    figure>i>a {
       text-decoration: none;
     }
 
 
-    figure > i > a > span{
+    figure>i>a>span {
       position: relative;
       bottom: 8px;
       left: 1rem;
@@ -90,7 +92,7 @@
     }
 
     .card>h2 {
-     padding: 1rem;
+      padding: 1rem;
       text-align: center;
     }
 
@@ -103,70 +105,106 @@
 
     .checkbox-icon {
       color: gray;
-    margin-right: 2rem;
+      margin-right: 2rem;
     }
-    s{
+
+    s {
       color: rgb(169, 169, 169);
       padding-right: 3rem;
     }
 
-    input{
+    input {
       margin-top: 1rem;
-      margin-right:2rem;
+      margin-right: 2rem;
     }
 
-    
-    .task-card{
-        background-color: white;
-        position: absolute;
+
+    .task-card {
+      background-color: white;
+      position: absolute;
+      top: 25%;
+      left: 38%;
+      height: 180px;
+      width: 380px;
+      border-radius: 10px;
+    }
+
+    .task-card>h2 {
+      background-color: white;
+      font-size: large;
+      display: inline-block;
+      padding: 10px;
+
+    }
+
+    .task-card>a>i {
+      background-color: white;
+      color: black;
+      font-size: 15px;
+      position: absolute;
+      top: 15px;
+      right: 20px;
+      cursor: pointer;
+
+
+    }
+
+    .task-card>button {
+      border-radius: 10px;
+      position: relative;
+      border: none;
+      float: right;
+      padding: 10px;
+      right: 20px;
+      background-color: #00A5EC;
+      cursor: pointer;
+      color: white;
+    }
+
+    .task-card>input {
+      border-radius: 5px;
+      background-color: rgb(230, 230, 230);
+      border: none;
+      padding: 5px;
+      width: 80%;
+      margin: 20px 40px;
+    }
+
+
+    /* Media Queries */
+    @media (min-width:0px)and (max-width:480px) {
+
+      .task-card {
         top: 25%;
-        left: 38%;
+        left: 10%;
         height: 180px;
-        width: 380px;
-        border-radius: 10px;
-    }
+        width: 300px;
+      }
 
-    .task-card > h2{
-        background-color: white;
-        font-size: large;
-        display: inline-block;
-        padding: 10px;
+      .task-card>button {
 
-    }
-   .task-card > a> i{
-    background-color: white;
-        color: black;
-        font-size: 15px;
-        position: absolute;
-        top: 15px;
+        padding: 5px;
         right: 20px;
-        cursor: pointer;
 
-        
-   }
+      }
+    }
 
-    .task-card > button{
-        border-radius: 10px;
-    position: relative;
-    border: none;
-    float: right;
-    padding: 10px;
-    right: 20px;
-    background-color: #00A5EC;
-    cursor: pointer;
-    color: white;
-}
-.task-card > input{
-    border-radius: 5px;
-    background-color: rgb(230, 230, 230);
-    border: none;
-    padding: 5px;
-    width: 80%;
-    margin: 20px 40px;
-}
+    @media (min-width:481px)and (max-width:748px) {
 
-    
+      .task-card {
+        top: 35%;
+        left: 17%;
+        height: 200px;
+        width: 400px;
+      }
 
+      .task-card>button {
+
+        padding: 10px;
+        right: 20px;
+
+      }
+    }
   </style>
 </head>
 
@@ -176,45 +214,45 @@
   <!-- NavBar -->
 
 
- <div style="filter:brightness(30%) ; opacity: 0.2;">
+  <div style="filter:brightness(30%) ; opacity: 0.2;">
     <header>
-        <nav>
-          <h1>Tasks <span style="color: #00a5ec">List</span></h1>
-        </nav>
-      </header>
-    
-    
-      <!-- single Card -->
-      <section class="container">
-        <figure>
-          <i class="fa-sharp fa-solid fa-circle-arrow-left"><a href="index.html"><span>back</span></a></i>
-          <i class="fa-solid plus-icon fa-circle-plus"><span>Add New Task</span></i>
-        </figure>
-    
-        <section class="card-section">
-          <div class="card">
-            <h2>Trip To Paris</h2>
-            <hr>
-            <div class="main-card">
-              <i class="fa-solid checkbox-icon fa-square-check"></i><s>Visit Church </s> <br>
-              <input type="checkbox">
+      <nav>
+        <h1>Tasks <span style="color: #00a5ec">List</span></h1>
+      </nav>
+    </header>
+
+
+    <!-- single Card -->
+    <section class="container">
+      <figure>
+        <i class="fa-sharp fa-solid fa-circle-arrow-left"><a href="index.html"><span>back</span></a></i>
+        <i class="fa-solid plus-icon fa-circle-plus"><span>Add New Task</span></i>
+      </figure>
+
+      <section class="card-section">
+        <div class="card">
+          <h2>Trip To Paris</h2>
+          <hr>
+          <div class="main-card">
+            <i class="fa-solid checkbox-icon fa-square-check"></i><s>Visit Church </s> <br>
+            <input type="checkbox">
             <label>Shopping</label>
-            </div>
-        </section>
+          </div>
       </section>
- </div>
+    </section>
+  </div>
 
 
 
 
- <div class="task-card">
+  <div class="task-card">
     <h2>Add New Task</h2>
-    <a href="index3.html"><i  class="fa-sharp fa-solid fa-xmark-large">╳</i></a>
+    <a href="index3.html"><i class="fa-sharp fa-solid fa-xmark-large">╳</i></a>
     <hr>
-    <input type="text" placeholder="Visit Famous Places"> <br>    
+    <input type="text" placeholder="Visit Famous Places"> <br>
     <button> + Add New Task</button>
 
-</div>
+  </div>
 
 
 
